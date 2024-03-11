@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VK_Checker_By_MENHERA.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PathValid" Type="System.String" Scope="User">
+      <Value Profile="(Default)">valid.txt</Value>
+    </Setting>
+    <Setting Name="PathInvalid" Type="System.String" Scope="User">
+      <Value Profile="(Default)">invalid.txt</Value>
+    </Setting>
+    <Setting Name="PathFrozen" Type="System.String" Scope="User">
+      <Value Profile="(Default)">frozen.txt</Value>
+    </Setting>
+    <Setting Name="PathTwoFactor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">twofactor.txt</Value>
+    </Setting>
+    <Setting Name="SeparationSign" Type="System.String" Scope="User">
+      <Value Profile="(Default)">:</Value>
+    </Setting>
+    <Setting Name="RequestTimeout" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="DebugOutputting" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NoUseProxies" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Checking" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Sharpening" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ThreadsCount" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="ProxiesType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HTTP</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
