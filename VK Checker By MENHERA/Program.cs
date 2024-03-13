@@ -71,7 +71,7 @@ namespace VK_Checker_By_MENHERA
             });
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
-            if (response.RequestMessage is not null && response.RequestMessage.RequestUri is not null && response.RequestMessage.RequestUri.AbsolutePath == "/429.html")
+            if (response.RequestMessage?.RequestUri?.AbsolutePath == "/429.html")
             {
                 foreach (Cookie cookie in httpClientHandler.CookieContainer.GetCookies(new Uri("https://vk.com/429.html")).Cast<Cookie>())
                 {
@@ -148,12 +148,12 @@ namespace VK_Checker_By_MENHERA
                     RequestUri = new Uri("https://vk.com/feed"),
                 });
 
-                if (check.RequestMessage is not null && check.RequestMessage.RequestUri is not null && check.RequestMessage.RequestUri.Query == "?act=blocked")
+                if (check.RequestMessage?.RequestUri?.Query == "?act=blocked")
                 {
                     throw new AccountBlocked($"AccountBlocked");
                 }
 
-                if (check.RequestMessage is not null && check.RequestMessage.RequestUri is not null && check.RequestMessage.RequestUri.Query == "?act=authcheck")
+                if (check.RequestMessage?.RequestUri?.Query == "?act=authcheck")
                 {
                     throw new TwoFactorAuth($"TwofactorAuth");
                 }
